@@ -291,10 +291,7 @@ p
 
 ## 6. Integrating Meteorological Data
 
-This section demonstrates how meteorological variables are processed and linked
-to air-quality observations using R. Hourly records from the Madrid Open Data Portal
-are reshaped, validated, and aggregated into daily means before being joined with
-NO₂ and O₃ concentrations.
+This section demonstrates how meteorological variables are processed and linked to air-quality observations using R. Hourly records from the Madrid Open Data Portal are reshaped, validated, and aggregated into daily means before being joined with NO₂ and O₃ concentrations.
 
 ```{r}
 # Load and harmonise meteorological data
@@ -320,7 +317,6 @@ met_clean <- met_raw |>
 # Merge with air-quality data
 full_data <- left_join(air_quality_daily, met_clean, by = c("STATION", "DATE"))
 ```
-
 
 ## 7. Conclusion and Outlook
 
