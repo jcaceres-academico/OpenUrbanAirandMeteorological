@@ -1,0 +1,62 @@
+---
+title: "Citizen Science and STEM Education with R"
+subtitle: "Teaching and Research Companion Notebook — Open Urban Air Data from Madrid (2020–2024)"
+author:
+  - name: "Jesús Cáceres Tello"
+    affiliation: "Faculty of Computer Science, Complutense University of Madrid"
+    email: "jescacer@ucm.es"
+  - name: "José Javier Galán Hernández"
+    affiliation: "Faculty of Statistical Studies, Complutense University of Madrid"
+    email: "josejgal@ucm.es"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-title: "Contents"
+    toc-location: left
+    number-sections: true
+    page-layout: full
+engine: knitr
+execute:
+  echo: false
+  warning: false
+  message: false
+  working-directory: ".."
+title-block-style: default
+title-block-banner: false
+---
+
+# 1. Purpose of the Notebook
+
+This Quarto Notebook serves as a **teaching and research companion** to the article\
+*Citizen Science and STEM Education with R: Reproducible Learning from Open Urban Air Quality Data* (Applied Sciences, 2025).
+
+It reproduces the main analytical workflow implemented in the study and illustrates how R and Quarto can be integrated into **STEM education** to foster data literacy, environmental awareness, and methodological transparency.
+
+------------------------------------------------------------------------
+
+# 2. Reproducible Data Workflow
+
+The complete workflow integrates **open data**, **computational reproducibility**, and **STEM learning**.\
+It can be applied to other urban contexts or courses focusing on environmental informatics, statistical modelling, or sustainability transitions.
+
+```{r fig1-pipeline, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 1. Open Data and Methodological Pipeline.'}
+knitr::include_graphics("images/Fig1_Open_Data_and_Methodological_Pipeline.png")
+
+
+
+
+
+```
+
+------------------------------------------------------------------------
+
+## 🗂️ **3. Data Sources and Structure**
+
+# 3. Data Sources and Structure
+
+All datasets were retrieved from the **Madrid Open Data Portal (Ayuntamiento de Madrid)** and the **AEMET** open repository.
+
+Three processing stages were implemented in R:
+
+Each stage is reproducible through the R scripts in `/scripts/`: - `01_preprocessing.R` - `02_validation.R` - `03_parquet_conversion.R`
