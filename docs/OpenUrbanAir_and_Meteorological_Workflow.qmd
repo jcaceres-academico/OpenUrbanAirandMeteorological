@@ -35,7 +35,7 @@ It reproduces the main analytical workflow implemented in the study and illustra
 
 ------------------------------------------------------------------------
 
-# Reproducible Data Workflow
+# 🔁 Reproducible Data Workflow
 
 The complete workflow integrates **open data**, **computational reproducibility**, and **STEM learning**.\
 It can be applied to other urban contexts or courses focusing on environmental informatics, statistical modelling, or sustainability transitions.
@@ -87,7 +87,7 @@ knitr::include_graphics("images/Fig3_Data_Pipeline.png")
 Exploratory analysis introduces students to descriptive statistics and visual analytics in R using open environmental data.  
 The focus is on **NO₂** (a primary traffic-related pollutant) and **O₃** (a secondary pollutant formed photochemically), both key indicators of urban air quality dynamics.
 
-```{r fig4-variability, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 4. Annual variability of NO₂ and O₃ concentrations (2020–2024).'}
+```{r fig4a-variability, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 4. Annual variability of NO₂ and O₃ concentrations (2020–2024).'}
 knitr::include_graphics("images/Fig4_NO2_O3_Annual_Variability.png")
 ```
 
@@ -120,7 +120,65 @@ This exercise supports reproducible experimentation with forecasting horizons, c
 
 ```{r fig5a-prophet-no2, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 5a. Prophet forecast for NO₂ concentrations (2020–2024).'}
 knitr::include_graphics("images/Fig5a_Prophet_NO2_F.png")
+```
+
+```{r fig5b-prophet-O3, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 5b. Prophet forecast for O₃ concentrations (2020–2024).'}
 knitr::include_graphics("images/Fig5b_Prophet_O3_F.png")
 ```
 
+
+---
+
+# 🌦 Meteorological Integration
+
+Meteorological factors shape pollutant behaviour and are fundamental in understanding atmospheric processes.  
+By integrating temperature, solar radiation, and wind speed data from **AEMET**, learners can explore multivariate relationships within an urban ecosystem.
+
+## Integration Workflow
+
+```{r fig7-meteo, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 7. Integration workflow of meteorological and air quality data (2020–2024).'}
+knitr::include_graphics("images/Fig7_Meteorological_Data_Integration_Workflow_2020_2024.png")
+```
+
+
+---
+
+# 🎓 Learning and Reproducibility Framework
+
+Reproducibility is both a scientific and pedagogical value.  
+This framework unifies open data, transparent computation, and educational innovation, reinforcing the culture of **open science**.
+
+```{r fig6-learning, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 6. Reproducible learning and open-science framework for STEM education.'}
+knitr::include_graphics("images/Fig6_Learning_Reproducibility_Ecosystem.png")
+```
+
+
+---
+
+# 🧑‍🏫  Educational Applications
+
+
+This Notebook can be directly incorporated into undergraduate or postgraduate STEM courses focused on data analysis, environmental informatics, or sustainability.
+
+**Suggested learning activities:**
+1. Reproduce pollutant forecasts with modified training periods.  
+2. Explore correlations between additional meteorological variables.  
+3. Design inquiry-based projects connecting data to local environmental policies.  
+4. Document and publish reproducible reports using Quarto and GitHub.
+
+Through these exercises, students not only practise coding but also embrace scientific integrity and civic engagement through data.
+
+---
+
+# 🌐 Repository and Citation
+
+All code, figures, and harmonised datasets are openly available at:  
+[https://github.com/jcaceres-academico/OpenUrbanAirandMeteorological](https://github.com/jcaceres-academico/OpenUrbanAirandMeteorological)
+
+When citing this educational resource, please use:
+
+> Cáceres-Tello, J.; Galán-Hernández, J.J. (2025). *Citizen Science and STEM Education with R: Reproducible Learning from Open Urban Air Quality Data.* *Applied Sciences*, 15(x), xxxx.  
+> DOI: [placeholder]
+
+This ensures traceability and recognition for open-source academic contributions.
 
