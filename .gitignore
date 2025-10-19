@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+# Ignore high-resolution images
+images/*.tiff
