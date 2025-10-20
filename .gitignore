@@ -4,3 +4,6 @@
 .Ruserdata
 # Ignore high-resolution images
 images/*.tiff
+# --- Datos locales y caché ---
+data/
+rosm.cache/
