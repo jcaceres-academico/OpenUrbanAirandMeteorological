@@ -7,3 +7,7 @@ images/*.tiff
 # --- Datos locales y caché ---
 data/
 rosm.cache/
+# --- Archivos Quarto locales que no deben subirse ---
+docs/jcaceres_Quarto.html
+docs/jcaceres_Quarto.qmd
+docs/jcaceres_Quarto_files/
